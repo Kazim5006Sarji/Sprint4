@@ -24,15 +24,20 @@ public abstract class BasePage {
     }
 
     //    метод клика по элементу
-    public void clickList(By by) {
+    public void clickElement(By by) {
         scrollToElement(by);
         webDriver.findElement(by).click();
     }
 
-    //    методо получения текста из выпадающего поля
+    //    метод получения текста из выпадающего поля
     public String getTextFromDropdownField(By by) {
         WebDriverWait wait = new WebDriverWait(webDriver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.visibilityOfElementLocated(by));
         return webDriver.findElement(by).getText();
+    }
+
+    public void waitForElement(By by) {
+        WebDriverWait wait = new WebDriverWait(webDriver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(by));
     }
 }

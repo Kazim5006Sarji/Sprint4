@@ -166,7 +166,7 @@ public class OrderPage extends BasePage {
         return webDriver.findElement(orderConfirmed).getText();
     }
 
-//   Метод клиака по кнопке ЗАКАЗАТЬ
+    //   Метод клиака по кнопке ЗАКАЗАТЬ
     public void clickOnOrderButton() {
         webDriver.findElement(order).click();
     }
