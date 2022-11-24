@@ -7,11 +7,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="QA_Sprint4" />
+        <module name="Sprint_4-develop" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="QA_Sprint4" target="11" />
+      <module name="Sprint_4-develop" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>
